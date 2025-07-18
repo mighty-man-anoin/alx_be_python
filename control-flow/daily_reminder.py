@@ -16,9 +16,9 @@ match priority:
         exit()
         
 if time_bound == "yes":
-    message += " that requires immediate attention today!"
+    message += " that requires immediate attention today! Let's get it done!"
 else:
-    message += ". Consider completing it when you have free time."
+    message += ". Consider completing it when you have free time. Don't forget it!"
 
 
 print(message)
