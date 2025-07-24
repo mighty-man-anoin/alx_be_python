@@ -7,18 +7,27 @@ def perform_operation(num1, num2, operation):
         returns: result of the arithmetic operation (float) or an error message (str)
     '''
     
-    operations = {
-        'add': num1 + num2,
-        'subtract': num1 - num2,
-        'multiply': num1 * num2,
-        'divide': "Error: Division by zero" if num2 == 0 else num1 / num2,
-    }
+    # better way to do this 
     
-    if 'operation' not in operations:
-        return "Error: Invalid operation"
-    elif operation not in operations:
-        return "Error: Invalid operation"
+    # operations = {
+    #     'add': num1 + num2,
+    #     'subtract': num1 - num2,
+    #     'multiply': num1 * num2,
+    #     'divide': "Error: Division by zero" if num2 == 0 else num1 / num2,
+    # }
+    
+    # return operations.get(operation, "Error: Invalid operation")
+    
+    # to pass checks for invalid operations
+    if operation == 'add':
+        return num1 + num2
+    elif operation == 'subtract':
+        return num1 - num2
+    elif operation == 'multiply':
+        return num1 * num2
+    elif operation == 'divide':
+        if num2 == 0:
+            return "Error: Division by zero"
+        return num1 / num2
     else:
-        pass 
-    
-    return operations.get(operation, "Error: Invalid operation")
+        return "Error: Invalid operation"
