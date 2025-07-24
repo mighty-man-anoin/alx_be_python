@@ -14,4 +14,11 @@ def perform_operation(num1, num2, operation):
         'divide': "Error: Division by zero" if num2 == 0 else num1 / num2,
     }
     
+    if 'operation' not in operations:
+        return "Error: Invalid operation"
+    elif operation not in operations:
+        return "Error: Invalid operation"
+    else:
+        pass 
+    
     return operations.get(operation, "Error: Invalid operation")
