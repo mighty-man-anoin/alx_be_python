@@ -1,5 +1,6 @@
 
-def perform_operation(num1: float, num2: float, operation: str):
+# def perform_operation(num1: float, num2: float, operation: str):
+def perform_operation(num1, num2, operation):
     '''
         description: fxn executes the arithmetic operation based on the operation parameter and the numerical values provided.
         parameters: num1 (float), num2 (float), operation (str) -> [add, subtract, multiply, divide]
