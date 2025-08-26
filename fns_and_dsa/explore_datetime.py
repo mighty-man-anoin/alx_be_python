@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta
 
-time_date = datetime.today()
+time_date = datetime.now()
 
 current_date = time_date.date()
 
